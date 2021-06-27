@@ -1,7 +1,9 @@
+/* body ?の色 */
 body {
     background: #efefef;
 }
 
+/* ボタンの設定 */
 #btn {
     width: 200px;
     height: 200px;
@@ -17,7 +19,6 @@ body {
     box-shadow: 0 10px 0 #d1483e;
     user-select: none;
 }
-
 #btn:hover {
     opacity: 0.9;
 }
@@ -25,4 +26,19 @@ body {
 #btn:active {
     box-shadow: 0 5px 0 #d1483e;    
     margin-top: 35px;
+}
+
+p {
+    font-size: 20px;
+    color: #ef454a;
+    text-align: center;
+}
+
+#target {
+    user-select: none;
+    cursor: pointer;
+}
+
+#target:hover {
+    opacity: 0.9;
 }
