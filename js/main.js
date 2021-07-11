@@ -4,10 +4,10 @@
     const btn = document.getElementById('btn');
 
         //  ここはなくてもいい
-    const target =document.getElementById('target');
-    target.addEventListener('click',() => {
-        target.textContent = '↑↑上のボタンをクリック!!';
-    });
+    // const target =document.getElementById('target');
+    // target.addEventListener('click',() => {
+    //     target.textContent = '↑↑上のボタンをクリック!!';
+    // });
 
     btn.addEventListener('click', () => {
         const results = ['大吉','中吉','凶','末吉','吉','大凶'];
@@ -34,5 +34,29 @@
         }
 
     });
+
+    // モーダルの表示
+    const open = document.getElementById('open');
+    const close = document.getElementById('close');
+    const modal = document.getElementById('modal');
+    const mask = document.getElementById('mask');
+
+    open.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+        mask.classList.remove('hidden');
+    });
+
+    close.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        mask.classList.add('hidden');
+    });
+
+    mask.addEventListener('click', () => {
+        // modal.classList.add('hidden');
+        // mask.classList.add('hidden');
+        close.click();
+    });
+
 }
+
 
